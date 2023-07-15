@@ -1,0 +1,77 @@
+<?php
+	require 'config.php';
+	//$id = "AB-1234";
+	
+	$sqluser = "SELECT Brand_Name , Cost_per_km FROM vehicle where VehicleID= 'CE-1011' ";
+        $result = $con->query($sqluser);
+        $rows = $result->num_rows;
+	
+	// select Query
+	//$sql ="SELECT Brand_Name , Cost_per_km FROM vehicle where VehicleID=$id";
+	
+	// resultser int result variable
+	//$result=$con -> query($sql);
+
+	if ( $result -> num_rows>0 )
+	{
+		if ( $rows ["Status"]=='A' )
+		{
+			// read data
+			while ($rows = $result -> fetch_assoc())
+			{
+				$name=$rows["Brand_Name"];
+				$cost=$rows["Cost_per_km"];
+				
+				echo $name;
+				echo "<br>" ;
+				echo $cost;
+				
+			}
+		}
+		
+		else 
+		{
+			echo "Rented!" ;
+		}
+
+	}
+
+	$con-> close();
+
+?>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="maindiv">
+		<br><br>
+		<p>	
+		<b>ApeX</b> Rent a Car are the pioneers for wedding car hire Sri Lanka services with a proven track record of being well geared for weddings, corporate & VIP events, celebrity events, motor cades and any other special occasions. We provide special tailor made wedding packages for your most important occasion to ensure that the entire ceremony runs smoothly when it comes to the most vital transportation needs to arrive and depart on time with back up options kept ready in case of an unexpected emergency.
+	</p>
+		<br>
+		<br>	
+	</div>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<style>
+			
+.logo{
+	
+	float:left;
+	font-style: oblique;
+	text-shadow: 2px 2px 5px #C96567;
+	font-size:25px;
+	font-weight:bold;
+	margin-right:10px;
+	margin-left:15px;
+	margin-bottom:6px;
+
+}
+
+.topnav {
+    background-color: #314455;
+    overflow: hidden;
+	
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+.topnav a:hover {
+  background-color: #C96567;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #314455;
+  color: white;
+
+}
+
+
+.topnav-right {
+  float: right;
+}
+.option {
+	
+	font-size : 30px;
+	font-weight:bold;
+	float:center;
+	text-align:center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height:50%
+}
+
+
+
+h2{
+	
+	text-align:center;
+	color:blue;
+	font-weight:bold;
+}
+
+p{
+	text-align:center;
+	
+	
+}
+
+
+div.transbox {
+  margin: 30px;
+  background-color: #C5C6D0;
+  border: 0;
+  opacity: 0.6;
+  padding : 5px;
+}
+
+div.transbox p {
+  margin: 10%;
+  font-weight: bold;
+  color: #000000;
+}
+
+footer {
+  
+  padding: 40px;
+  background-color:#314455;
+  color: white;
+}
+
+ul.quicklinks {
+	
+	text-align:center;
+	margin-top: 10px;
+	list-style: none;
+}
+
+ul.quicklinks li a {
+	
+	color: white;
+}
+
+.socialmedia { 
+	float: left; 
+}
+
+.socialmedia ul { 
+	list-style: none 
+}
+
+.socialmedia ul li { 
+	display: inline 
+}
+
+.socialmedia ul li a {
+	margin-left: 6px;
+	padding: 7px;
+	background: black;
+	color: white;
+	display: Bottom left;
+	border-radius: 20px;
+}
+
+.socialmedia ul li a:hover {
+	background: orange;
+}
+
+ul.credit li a {
+	
+	color: white;
+}
+
+
+.credit { 
+	float:right; 
+}
+
+.credit ul { 
+	list-style: none ;
+}
+
+.credit ul li { 
+	display: inline ;
+}
+
+.credit ul li a {
+	margin-left: 8px;
+	padding: 10px;
+	background: black;
+	color: white;
+	display:right;
+	border-radius: 20px;
+}
+
+.credit ul li a:hover {
+	background: orange;
+}
+
+
+.para4{
+
+color:gray;
+text-align:center;
+left: 50%;
+}
+		</style>
+		<!-- add a title (a)-->
+		<title> Online vehicle reservation </title>
+		
+		<!--add styleSheet-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="Styles1/projectstyle.css">
+		<!--<script src="js1/script1.js"> </script>-->
+		
+	</head>
+	
+	<body>
+		
+		
+		<!-- add a horizontal menu (e) -->
+		
+		<div class="topnav">
+		
+		<!--<img class="logo" src="images1/logo.png" width="200px" height="60px">-->
+		
+		
+		<div class="logo">
+		
+		<p><strong>ApeX</strong></p>
+		
+		</div>
+		
+	
+		
+			<a href="Home.html">Home</a>
+			<a href="Service.html">Service</a>
+			<a href="Catalogue.html">Catalogue</a>
+			<a href="Aboutus.html">About us</a>
+			<a href="contactus.html">Contact us</a>
+			<a href="FAQ.html">FAQ</a>
+			<a href="T&C.html">T&C</a>
+			<a href="Feedback.html">Feedback</a>
+			
+			<div class="topnav-right">
+			<a href="signup.php">SIGN IN</a>
+			<a href="login.php">LOGIN</a>
+			</div>
+		
+		
+		</div>
+		
+	<br><br>
+		
+		
+		
+		<fieldset style="text-align:center; font-family: Arial;">
+		<h1>
+		<p style="text-align:center; color:#C96567; font-family: Arial;">Reset Password</p>
+		</h1>
+		<p style="text-align:center; font-family: Arial;"> <h3 style="font-family: Arial;">
+		  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		Enter the email associated with your account and we'll send an email with
+		instructions to reset your password.</h3>
+		</p>
+		
+		
+		
+		
+		
+			<lable for ="email"> Enter your Email Address </label><br><br>
+			<input type = "text" id = "email" required> <br><br>
+			
+		</fieldset>
+		
+		<br><br>
+		
+		<fieldset style="text-align:center; font-family: Arial;">
+		
+			<h1><p style="text-align:center; color:#C96567; font-family: Arial;">Create new password</p></h1>
+			<p style="text-align:center"> <h3> Your new passwor  must be diffrent from previous used password.</h3></p><br><br>
+			
+			<label for="password">Password  </label><br>
+			<input type="password" id="pwd" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{5,10}" required> <br><br><br>
+				
+			<label for="confirmpassword">Confirm Password </label><br>
+			<input type="password" id="c_pwd" required><br><br>
+			
+			<input type="submit" id="btn_submit" style="background-color: #C96567;" value ="Submit" disabled ><br><br>
+		<br><br>
+		</fieldset>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		<!-- add a horizontal line (d)-->
+		<hr>
+		
+		<footer>
+				
+				
+
+			<div class="socialmedia">
+				<ul>
+					<li><a href="#"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-rss fa-fw" aria-hidden="true"></i></a></li>
+					
+				</ul>
+			</div> <!-- socialmedia -->
+			
+			
+			<div class="credit">
+				<ul>
+					<li><a href="#"><i class="fa fa-credit-card"  aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-credit-card"  aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-credit-card"  aria-hidden="true"></i></a></li>
+				</ul>
+			</div> 
+		
+			
+			
+			<p class="para4"><b>C<b> 2021-ApeX rent car Pvt.Ltd.All Rights Reserved </p>
+		
+		</footer>
+		
+		
+	</div>
+	</body>
+</html>

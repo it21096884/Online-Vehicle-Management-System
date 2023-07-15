@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- add a title (a)-->
+		<title> Online vehicle reservation </title>
+		
+		<!--add styleSheet-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="styles1/home.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		
+		
+		 <!-----refuring to the youtube video-------------->
+	<script>
+		$(document).ready(function(){
+			$(".accordion_header").click(function(){
+			   $(".accordion_header").removeClass("active");
+			   $(this).addClass("active");
+			});
+		});
+	</script>
+	
+	
+	<style>
+	
+		.topnav a:hover {
+		  background-color: #C96567;
+		  color: black;
+		}
+
+	
+	@import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
+
+	*{
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	
+	}
+
+	body{
+	  background: #f2f1ed;
+	}
+
+	.require1{
+	
+	text-align:center;
+	margin:20px auto 0 ;
+	padding:10px;
+	background-color:#fff;
+	width:65%;
+	
+	
+	
+	}
+	
+	.wrapper{
+	  width: 1000px;
+	  margin: 80px auto 0;
+	}
+
+	.wrapper .accordion_wrap .accordion_header{
+	  width: 100%;
+	  height: 50px;
+	  background: #fff;
+	  padding: 15px;
+	  color: #39a098;
+	  font-weight: 700;
+	  border-bottom: 2px solid #39a098;
+	  position: relative;
+	  cursor: pointer;
+	}
+
+	.wrapper .accordion_wrap:first-child .accordion_header{
+	  border-top-left-radius: 3px;
+	  border-top-right-radius: 3px;
+	}
+
+	.wrapper .accordion_wrap:last-child .accordion_header{
+	  border-bottom: 2px solid transparent;
+	  border-bottom-left-radius: 3px;
+	  border-bottom-right-radius: 3px;
+	}
+
+	.wrapper .accordion_wrap:last-child .accordion_header:hover{
+	  border-bottom: 2px solid transparent;
+	}
+
+	.wrapper .accordion_wrap .accordion_header:before,
+	.wrapper .accordion_wrap .accordion_header:after{
+	  content: "";
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  right: 15px;
+	  width: 20px;
+	  height: 2px;
+	  background: #39a098;
+	}
+
+	.wrapper .accordion_wrap .accordion_header:hover{
+	  color: #01645d;
+	  border-color: #01645d;
+	}
+
+	.wrapper .accordion_wrap .accordion_header:hover:before,
+	.wrapper .accordion_wrap .accordion_header:hover:after{
+	  background: #01645d;
+	}
+
+	.wrapper .accordion_wrap .accordion_header:after{
+	  transform: rotate(-90deg);
+	  transition: all 0.5s ease;
+	}
+
+	.wrapper .accordion_wrap .accordion_body{
+	  width: 100%;
+	  height: 0px;
+	  transition: all 0.5s ease;
+	  background: #39a098;
+	  overflow: hidden;
+	}
+
+	.wrapper .accordion_wrap .accordion_body p{
+	  padding: 15px;
+	  font-size: 15px;
+	  line-height: 22px;
+	  color: #fff;
+	}
+
+	.wrapper .accordion_wrap .accordion_header.active{
+	  color: #01645d; 
+	  border-color: #01645d;
+	}
+
+	.wrapper .accordion_wrap:last-child .accordion_header.active{
+	  border-bottom: 2px solid #01645d;
+	  border-bottom-left-radius: 0px;
+	  border-bottom-right-radius: 0px;
+	}
+
+	.wrapper .accordion_wrap .accordion_header.active:before,
+	.wrapper .accordion_wrap .accordion_header.active:after{
+	  background: #01645d;
+	}
+
+	.wrapper .accordion_wrap .accordion_header.active:after{
+	  transform: rotate(0deg);
+	}
+
+	.wrapper .accordion_wrap .accordion_header.active + .accordion_body{
+	  height: 180px;
+	}
+	
+	
+	
+	</style>
+	
+		
+	</head>
+	
+	<body>
+		
+		
+		<!-- add a horizontal menu (e) -->
+		
+		<div class="topnav">
+		
+		<!--<img class="logo" src="images1/logo.png" width="200px" height="60px">-->
+		
+		
+		<div class="logo">
+		
+		<p><strong>ApeX</strong></p>
+		
+		</div>
+		
+	
+		
+			<a  href="Home.html">Home</a>
+			<a href="Service.html">Service</a>
+			<a  href="Booking.php">Catalogue</a>
+			<a href="Aboutus">About us</a>
+			<a href="contactus.html">Contact us</a>
+			<a class="active" href="FAQ.html">FAQ</a>
+			<a href="T&C.html">T&C</a>
+			<a  href="Feedback.html">Feedback</a>
+			
+			<div class="topnav-right">
+			<a href="signup.php">SIGN IN</a>
+			<a href="login.php">LOGIN</a>
+			</div>
+		
+		
+		</div>
+		
+	
+			<h1 class="require1">Rental Requirements</h1>
+				<div class="wrapper">
+		  <div class="accordion_wrap accordion_1">
+			<div class="accordion_header">
+			  What´s required when renting a car?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  
+
+			  You must be above 25 and have held a valid driver’s license. 
+			  You must also have a valid passport and an international credit card, issued under your name, 
+			  with sufficient funds for a credit hold (safety deposit). Additionally, 
+			  depending on your destination legislation, 
+			  it´s important to have and hold an International Driving Permit.
+			  
+			  </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_2">
+			<div class="accordion_header">
+			   Can I add an Additional Driver?
+			</div>
+			<div class="accordion_body">
+			   <p>
+			   Yes, we do allow up to 10 additional drivers per contract. 
+			   If the additional drivers cannot be present when you pick up the vehicle, 
+			   they can be registered with their valid driving license at any other branch 
+			   (main driver must be present as well). 
+			   A fee will be applied for adding each additional driver.
+			   
+			   </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_3">
+			<div class="accordion_header">
+			 Can elderly also rent car?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  Yes. No age restrictions are in place. Anybody with a valid driver’s license 
+			  can rent a vehicle.
+		
+			  </p>
+			</div>
+		  </div>
+		  
+		<div class="accordion_wrap accordion_4">
+			<div class="accordion_header">
+			For how many days can I reserve a rental car?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  We accept reservations for a rental period of one (1) month at most.
+			  
+			  </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_5">
+			<div class="accordion_header">
+			 Can I request an AT (automatic) or MT (manual) vehicle?
+			</div>
+			<div class="accordion_body">
+			   <p>Yes. Both AT (automatic) vehicles and MT (manual) vehicles are available.</p>
+			</div>
+		  </div>
+		 
+		</div>	
+		
+		
+		
+		
+		<h1 class="require1">Reservation</h1>
+				<div class="wrapper">
+		  <div class="accordion_wrap accordion_1">
+			<div class="accordion_header">
+			  Can I rent a car without a reservation?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  Yes, as long as a vehicle is available in the station; however, 
+			  we recommend making a reservation 
+			  because no vehicle may be available during busy periods.
+			  
+			  </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_2">
+			<div class="accordion_header">
+			  Will there be a problem if the person who made the reservation is
+			  different from the one who will drive the car?
+			</div>
+			<div class="accordion_body">
+			   <p>
+			  No. Persons who will not drive the car can also make the reservation; 
+			  however, they need to confirm first the driver of the vehicle before 
+			  making the reservation.
+			   </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_3">
+			<div class="accordion_header">
+			  Can I cancel my reservation?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  Yes, reservations can be cancelled. Please contact us as soon as possible 
+			  if you wish to cancel your reservation. The reservation number issued when you made the 
+			  reservation and the email address 
+			  you registered at the time of reservation are required to cancel or make changes to your
+			  reservation.
+			  
+			  </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_4">
+			<div class="accordion_header">
+			Can I make changes to my reservation?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  Yes. The reservation number issued when you made the reservation and the email
+			  address you registered at the time of reservation are required to make changes 
+			  to your reservation.
+			  
+			  </p>
+			</div>
+		  </div>
+		  
+		  </div>
+		  
+		  
+		  
+		  
+		  <h1 class="require1">Confirmation & Payment</h1>
+				<div class="wrapper">
+		  <div class="accordion_wrap accordion_1">
+			<div class="accordion_header">
+			  Can I pay by credit card?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  No. Only cash and cheque are accepted.
+			  
+			  
+			  </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_2">
+			<div class="accordion_header">
+			 Can I pay in cash?
+			</div>
+			<div class="accordion_body">
+			   <p>
+			   Yes. We generally require payment by credit card, 
+			   but , we allow payment in cash at the 
+			   rental station where the vehicle is to be returned. If you wish to pay in cash, 
+			   you must also submit an item of identification (copies are acceptable) in addition 
+			   to your driver’s license. You will be required to pay by credit card if you rent a car
+			   from a rental station without a reservation.
+			   
+			   
+			   </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_3">
+			<div class="accordion_header">
+			 When do I have to pay the rental fees?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  
+			  Please pay the fees when returned the vehicle at the reservation.
+			  
+			  </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_4">
+			<div class="accordion_header">
+			  How is the rental fee calculated?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  The rental fee is determined in accordance with the model of the vehicle and the 
+			  length of the rental period and according tho the distance traveled.
+			  If the user has requested any additional options, 
+			  accessories, compensation package, or other services, the applicable costs will be
+			  added to the basic fee accordingly.
+			  
+			  
+			  </p>
+			</div>
+		  </div>
+		  
+		  </div>
+		  
+		  
+		  
+		
+		  <h1 class="require1">Insuarance & Protection</h1>
+				<div class="wrapper">
+		  <div class="accordion_wrap accordion_1">
+			<div class="accordion_header">
+			Do I need to get the Safety Package or the Super Safety Package?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  
+			 No. Subscribing to these packages is not mandatory. 
+			 A package can be selected when making a reservation or when picking up the vehicle.
+			  
+			  </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_2">
+			<div class="accordion_header">
+			What happens if I get in an accident and am not subscribed to the Safety Package?
+			</div>
+			<div class="accordion_body">
+			   <p>
+				All of our rental vehicles are covered for unlimited body injury compensation
+				(Deductible: LKR 89,000); unlimited property damage compensation 
+				(Deductible: LKR 89,000); personal injury compensation up to LKR 356,000; 
+				and market-value vehicle damage compensation (Deductible: LKR 89,000 to LKR 178,000). 
+				These are included in the rental fee. In the event of an accident, 
+				the user will be required to pay the deductible. A non-operation charge 
+				(partial compensation for loss of earnings) will be imposed as well.
+			   </p>
+			</div>
+		  </div>
+		  
+		  <div class="accordion_wrap accordion_3">
+			<div class="accordion_header">
+			 Does compensation apply to all drivers?
+			</div>
+			<div class="accordion_body">
+			  <p>
+			  Everyone registered as a driver at the time the vehicle is picked up 
+			  will be compensated in the same way as the applicant.
+			  </p>
+			</div>
+		  </div>
+		  
+		  </div>
+	
+	<br><br>
+	
+		<!-- add a horizontal line (d)-->
+		<hr>
+		
+		<footer>
+				<div class="socialmedia">
+				<ul>
+					<li><a href="#"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-rss fa-fw" aria-hidden="true"></i></a></li>
+					
+				</ul>
+			</div> <!-- socialmedia -->
+			
+			
+			<div class="credit">
+				<ul>
+					<li><a href="#"><i class="fa fa-credit-card"  aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-credit-card"  aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-credit-card"  aria-hidden="true"></i></a></li>
+				</ul>
+			</div> 
+		
+			
+			
+			<p class="para4"><b>C<b> 2021-ApeX rent car Pvt.Ltd.All Rights Reserved </p>
+		
+		</footer>
+		
+		
+	</div>
+	</body>
+</html>

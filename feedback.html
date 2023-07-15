@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- add a title (a)-->
+		<title> Online vehicle reservation </title>
+		
+		<!--add styleSheet-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="styles1/home.css">
+		<!--<script src="js1/script1.js"> </script>-->
+		
+		
+	</head>
+	
+	<style>
+	
+	body{
+	
+	background-color:#f2f1ed;
+	
+	}
+	
+		.topnav a:hover {
+		  background-color: #C96567;
+		  color: black;
+		}
+
+	
+	</style>
+	
+	<body>
+		
+		
+		<!-- add a horizontal menu (e) -->
+		
+		<div class="topnav">
+		
+		<!--<img class="logo" src="images1/logo.png" width="200px" height="60px">-->
+		
+		
+		<div class="logo">
+		
+		<p><strong>ApeX</strong></p>
+		
+		</div>
+		
+	
+		<a href="Home.html">Home</a>
+		<a href="Service.html" >Service</a>
+		<a href="Catalogue.html" >Catalogue</a>
+		<a href="Aboutus.html">About us</a>
+		<a href="contactus.html">Contact us</a>
+		<a href="FAQ.html">FAQ</a>
+		<a href="T&C.html">T&C</a>
+		<a href="Feedback.html">Feedback</a>
+
+		<div class="topnav-right">
+		<a href="signup.php">SIGN IN</a>
+		<a href="login.php">LOGIN</a>
+		</div>
+			
+		
+		</div>
+		
+		<br><br><br><br>
+		
+	
+		<div class="container">
+		<div class="side-image">
+		<img src="images1/image.jpg"  >
+		</div>
+		
+		<div class="contain-form">
+		<h2 class="head">FeedBack</h2><br><br>
+		<form action="#" name="myForm" onsubmit="return validateForm()" method="post" >
+		
+		<div class="field">
+		<p>Full Name</p>
+		<input type="text" placeholder="Your Name*" name="fname">
+		</div>
+		
+		<div class="field">
+		<p>Email</p>
+		<input type="email" placeholder="Your email" name="email">
+		</div>
+		
+		
+		<div class="field">
+		<p>Our Service</p>
+		<select name="select" id="#" name="select">
+		<option value="1">Excellent</option>
+		<option value="2">Good</option>
+		<option value="3">Bad</option>
+		<option value="4">Others</option>
+		</select>
+		</div>
+		
+		
+		<div class="field">
+		<lable name="achieve"><b>How would you rate achievement of reservation(out of 5)?</b> </lable>&nbsp &nbsp &nbsp
+		<select name="select" id="#">
+		<option value="1">5</option>
+		<option value="2">4</option>
+		<option value="3">3</option>
+		<option value="4">2</option>
+		<option value="4">1</option>
+		</select>
+		</div>
+		
+		<div class="field">
+		<p>Suggetions</p>
+		<textarea id="suggetion" placeholder="suggetion*"  name="suggetion"></textarea>
+		</div>
+		
+		<button class="btn" onclick="loadDataBtn('btn1')">Submit</button><br><br>
+		
+	
+		</form>
+		</div>
+			
+		</form>
+		</div>
+		
+		</div>
+		
+	 <!-----refuring to the w3 school-------------->
+	
+	<script>
+	
+	  //alert("submitted successfully!!!");
+	function loadDataBtn(data)
+	{
+	
+	if(data=="btn1")
+		{
+				alert("submitted successfully!!!");
+		}
+		
+		
+		else
+		{
+				alert("filled out!!");
+		
+		}
+	
+	}
+	</script>
+	
+
+		<!-- add a horizontal line (d)-->
+		<hr>
+		
+		<footer>
+				<div class="socialmedia">
+				<ul>
+					<li><a href="#"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus fa-fw" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-rss fa-fw" aria-hidden="true"></i></a></li>
+					
+				</ul>
+			</div> <!-- socialmedia -->
+			
+			
+			<div class="credit">
+				<ul>
+					<li><a href="#"><i class="fa fa-credit-card"  aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-credit-card"  aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-credit-card"  aria-hidden="true"></i></a></li>
+				</ul>
+			</div> 
+		
+		<p class="para4"><b>C<b> 2021-ApeX rent car Pvt.Ltd.All Rights Reserved </p>
+		
+		</footer>
+		
+		
+	</div>
+	</body>
+</html>
+
+
+
+
+
+
+
